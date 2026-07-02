@@ -6,6 +6,7 @@ This file defines visual-IP selection rules and verifiable route metadata for th
 
 - Omitted visual IP selects `xiaohei`.
 - `小黑`, `Xiaohei`, `Ian`, and `ian-xiaohei` select the same `xiaohei` route.
+- `Ruby`, `Vibrant Ruby`, `Fresh Human`, `活力Ruby`, `鲜活人类`, `Ruby IP`, `Ruby头像`, `Ruby贴纸`, and `Ruby衣柜` select the same `ruby` route and keep route status `active`.
 - `小盒`, `Littlebox`, `纸盒`, `paper-box`, and `carton` select the same `littlebox` route.
 - `Tom`, `Tom Cat`, `Tom and Jerry`, `汤姆`, and `汤姆猫` select the same `tom` route and keep route status `gated-authorized`.
 - `Ferris`, `Rust mascot`, `Rust crab`, `Rustacean`, `Rust 吉祥物`, and `Rust 螃蟹` select the same `ferris` route and keep route status `source-reviewed`.
@@ -15,8 +16,9 @@ This file defines visual-IP selection rules and verifiable route metadata for th
 - Go Gopher route matching requires Go Gopher, Gopher, golang gopher, or a Go Gopher-qualified route phrase; generic aliases such as `go`, `blue mascot`, `animal`, and `logo` remain outside the Go Gopher alias set.
 - `蔡徐坤`, `Cai Xukun`, `caixukun`, and `cxk` select the same `caixukun` route and keep route status `gated-public-figure`.
 - Cai Xukun route matching requires `蔡徐坤`, `Cai Xukun`, `caixukun`, or `cxk`; broad celebrity, idol, duck, yellow mascot, and fandom words remain outside the Cai Xukun alias set.
-- Mixed requests across Xiaohei, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun create separate route groups. Compatibility marker: 每个 route group 只加载自己的 `required_references`; each group writes to its own output directory.
+- Mixed requests across Xiaohei, Ruby, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun create separate route groups. Compatibility marker: 每个 route group 只加载自己的 `required_references`; each group writes to its own output directory.
 - Routes store only selection, references, output suffixes, and attribution context. Style, character identity, prompt wording, and QA rules live in the selected IP's reference files.
+- Ruby is an explicit active human personal-IP route for article illustrations, avatars, transparent stickers, action sticker libraries, wardrobe variants, and social assets. Ruby route-local reference directory: `skills/visual-ip-illustrations/references/ips/ruby/`. Ruby source authority: `skills/visual-ip-illustrations/references/ips/ruby/source.md`.
 - Ferris is an explicit Rust-community mascot route with status source-reviewed; generated public Ferris samples require release review for Rust trademark and endorsement-safe wording.
 - Ferris route-local reference directory: `skills/visual-ip-illustrations/references/ips/ferris/`.
 - Ferris source/trademark authority: `skills/visual-ip-illustrations/references/ips/ferris/source.md`.
@@ -38,6 +40,7 @@ This file defines visual-IP selection rules and verifiable route metadata for th
 | id | display_name | aliases | default | output_suffix | required_references | attribution_context | status |
 |----|--------------|---------|---------|---------------|---------------------|---------------------|--------|
 | `xiaohei` | Xiaohei | `小黑`, `Xiaohei`, `Ian`, `ian-xiaohei` | `true` | `illustrations` | `references/ips/xiaohei/style-dna.md`; `references/ips/xiaohei/xiaohei-ip.md`; `references/ips/xiaohei/composition-patterns.md`; `references/ips/xiaohei/prompt-template.md`; `references/ips/xiaohei/qa-checklist.md` | Ian Xiaohei existing package | `active` |
+| `ruby` | Vibrant Ruby / Fresh Human | `Ruby`, `Vibrant Ruby`, `Fresh Human`, `活力Ruby`, `鲜活人类`, `Ruby IP`, `Ruby头像`, `Ruby贴纸`, `Ruby衣柜` | `false` | `ruby` | `references/ips/ruby/index.md`; `references/ips/ruby/source.md`; `references/ips/ruby/style-dna.md`; `references/ips/ruby/ruby-ip.md`; `references/ips/ruby/composition-patterns.md`; `references/ips/ruby/prompt-template.md`; `references/ips/ruby/qa-checklist.md` | Ruby personal visual IP source context; attribution records source identity, wardrobe library, and active human personal-IP boundary through `references/ips/ruby/source.md` | `active` |
 | `littlebox` | Littlebox | `小盒`, `Littlebox`, `纸盒`, `paper-box`, `carton` | `false` | `littlebox` | `references/ips/littlebox/style-dna.md`; `references/ips/littlebox/littlebox-ip.md`; `references/ips/littlebox/composition-patterns.md`; `references/ips/littlebox/language-and-labels.md`; `references/ips/littlebox/prompt-template.md`; `references/ips/littlebox/qa-checklist.md` | 5km Littlebox Illustrations by okooo5km; source https://github.com/okooo5km/5km-littlebox-illustrations; MIT; inspected commit 37cd93e | `active` |
 | `tom` | Tom | `Tom`, `Tom Cat`, `Tom and Jerry`, `汤姆`, `汤姆猫` | `false` | `tom` | `references/ips/tom/index.md`; `references/ips/tom/rights.md`; `references/ips/tom/style-dna.md`; `references/ips/tom/tom-ip.md`; `references/ips/tom/composition-patterns.md`; `references/ips/tom/prompt-template.md`; `references/ips/tom/qa-checklist.md` | Tom and Jerry / Tom source context; attribution records source identity while permission remains authorization-scope specific through `references/ips/tom/rights.md` | `gated-authorized` |
 | `ferris` | Ferris | `Ferris`, `Rust mascot`, `Rust crab`, `Rustacean`, `Rust 吉祥物`, `Rust 螃蟹` | `false` | `ferris` | `references/ips/ferris/index.md`; `references/ips/ferris/source.md`; `references/ips/ferris/style-dna.md`; `references/ips/ferris/ferris-ip.md`; `references/ips/ferris/composition-patterns.md`; `references/ips/ferris/prompt-template.md`; `references/ips/ferris/qa-checklist.md` | Ferris source context from `rustacean.net` and Karen Rustad Tolva; attribution records source context while Rust trademark boundary is governed through `references/ips/ferris/source.md` | `source-reviewed` |
@@ -45,6 +48,15 @@ This file defines visual-IP selection rules and verifiable route metadata for th
 | `openclaw` | OpenClaw | `OpenClaw`, `openclaw`, `OpenClaw logo`, `OpenClaw mascot`, `OpenClaw 助手`, `OpenClaw 吉祥物` | `false` | `openclaw` | `references/ips/openclaw/index.md`; `references/ips/openclaw/source.md`; `references/ips/openclaw/style-dna.md`; `references/ips/openclaw/openclaw-ip.md`; `references/ips/openclaw/composition-patterns.md`; `references/ips/openclaw/prompt-template.md`; `references/ips/openclaw/qa-checklist.md` | Official OpenClaw repository https://github.com/openclaw/openclaw; MIT License; Copyright (c) 2026 OpenClaw Foundation; uploaded red OpenClaw logo visual authority; source-reviewed route status through `references/ips/openclaw/source.md` | `source-reviewed` |
 | `gopher` | Go Gopher | `Go Gopher`, `Gopher`, `golang gopher`, `Go mascot`, `Go 吉祥物`, `Gopher 吉祥物` | `false` | `gopher` | `references/ips/gopher/index.md`; `references/ips/gopher/source.md`; `references/ips/gopher/style-dna.md`; `references/ips/gopher/gopher-ip.md`; `references/ips/gopher/composition-patterns.md`; `references/ips/gopher/prompt-template.md`; `references/ips/gopher/qa-checklist.md` | Official Go blog source https://go.dev/blog/gopher; Go Gopher created by Renee French; Creative Commons Attribution 4.0 license context; route-local `skills/visual-ip-illustrations/references/ips/gopher/gopher.png` visual authority; public generated Go Gopher samples require release review; Go logo identity and official Go project affiliation, approval, sponsorship, and endorsement claims stay outside positive route identity | `source-reviewed` |
 | `caixukun` | Cai Xukun | `蔡徐坤`, `Cai Xukun`, `caixukun`, `cxk` | `false` | `caixukun` | `references/ips/caixukun/index.md`; `references/ips/caixukun/source.md`; `references/ips/caixukun/style-dna.md`; `references/ips/caixukun/caixukun-ip.md`; `references/ips/caixukun/composition-patterns.md`; `references/ips/caixukun/prompt-template.md`; `references/ips/caixukun/qa-checklist.md` | Route-local uploaded visual authority recorded in `references/ips/caixukun/source.md` as uploaded reference image A and uploaded reference image B; gated public-figure stylized mascot route; public generated Cai Xukun samples require release review; realistic-person portrait output, official endorsement, affiliation, impersonation, campaign, celebrity advertising, and fandom promotion claims stay outside route identity | `gated-public-figure` |
+
+## Ruby Metadata
+
+- `source_history`: established as `活力Ruby / 鲜活人类` through accepted local wardrobe, avatar, and sticker assets.
+- `canonical_image_status`: local accepted wardrobe assets.
+- `drift_boundary`: source-authority-guided, not celebrity/person cloning.
+- Fixed visual markers: vivid orange bob hair, black cat-eye glasses, warm confident human face, red lips/smile accent, white or light inner top, expressive hand-drawn black linework, and orange hand-drawn connection-line/cable motif.
+- Wardrobe markers: Japanese City Boy, French Chic, Techwear, Vintage Rock v2, and Hip-hop variants can be used when requested; stable identity markers override clothing variation.
+- Authority boundary: `references/ips/ruby/source.md` is the Ruby route authority.
 
 ## OpenClaw Metadata
 
@@ -103,6 +115,8 @@ Root Xiaohei reference paths remain available during migration and point to cano
 
 - `xiaohei` output directory remains `assets/<article-slug>-illustrations/`; validation also keeps escaped marker `assets/&lt;article-slug&gt;-illustrations/`.
 - `xiaohei` filenames continue to use ordered English slugs such as `01-topic-name.png`.
+- `ruby` output directory is `assets/<article-slug>-ruby/`; validation also keeps escaped marker `assets/&lt;article-slug&gt;-ruby/`.
+- `ruby` filenames use ordered English slugs such as `01-topic-name.png`.
 - `littlebox` output directory is `assets/<article-slug>-littlebox/`; validation also keeps escaped marker `assets/&lt;article-slug&gt;-littlebox/`.
 - `littlebox` filenames use ordered English slugs such as `01-topic-name.png`.
 - `tom` output directory is `assets/<article-slug>-tom/`; validation also keeps escaped marker `assets/&lt;article-slug&gt;-tom/`.
@@ -117,7 +131,7 @@ Root Xiaohei reference paths remain available during migration and point to cano
 - `gopher` filenames use ordered English slugs such as `01-topic-name.png`.
 - `caixukun` output directory is `assets/<article-slug>-caixukun/`; validation also keeps escaped marker `assets/&lt;article-slug&gt;-caixukun/`.
 - `caixukun` filenames use ordered English slugs such as `01-topic-name.png`.
-- Mixed-IP requests split by IP into separate route groups: `xiaohei` 写入 `assets/<article-slug>-illustrations/`, `littlebox` 写入 `assets/<article-slug>-littlebox/`, `tom` 写入 `assets/<article-slug>-tom/`, `ferris` 写入 `assets/<article-slug>-ferris/`, `seal` writes to `assets/<article-slug>-seal/`, `openclaw` writes to `assets/<article-slug>-openclaw/`, `gopher` writes to `assets/<article-slug>-gopher/`, and `caixukun` writes to `assets/<article-slug>-caixukun/`.
+- Mixed-IP requests split by IP into separate route groups: `xiaohei` 写入 `assets/<article-slug>-illustrations/`, `ruby` writes to `assets/<article-slug>-ruby/`, `littlebox` 写入 `assets/<article-slug>-littlebox/`, `tom` 写入 `assets/<article-slug>-tom/`, `ferris` 写入 `assets/<article-slug>-ferris/`, `seal` writes to `assets/<article-slug>-seal/`, `openclaw` writes to `assets/<article-slug>-openclaw/`, `gopher` writes to `assets/<article-slug>-gopher/`, and `caixukun` writes to `assets/<article-slug>-caixukun/`.
 - Before output, inspect the target directory and choose a new filename to preserve historical results.
 
 ## Delivery Report Fields

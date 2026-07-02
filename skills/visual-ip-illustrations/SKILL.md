@@ -1,6 +1,6 @@
 ---
 name: visual-ip-illustrations
-description: Visual IP Illustrations generates selectable visual-IP article-body illustrations for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, and image repair. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun are explicit selectable routes.
+description: Visual IP Illustrations generates selectable visual-IP article-body illustrations and personal-IP assets for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, image repair, avatars, stickers, and wardrobe variants. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Ruby / 活力Ruby / 鲜活人类, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun are explicit selectable routes.
 ---
 
 # Visual IP Illustrations
@@ -27,6 +27,8 @@ Compatibility marker: `$ian-xiaohei-illustrations` remains the v1.4 compatibilit
 The omitted visual IP default is Xiaohei. Compatibility marker: omitted visual IP selects the Xiaohei route. Omitted visual IP selects only the Xiaohei route.
 
 Xiaohei is a black solid-bodied character with white dot eyes, thin legs, and a blank expression. Xiaohei performs one serious, absurd, conceptually valid action and carries the central cognitive action in the image.
+
+Ruby is an explicit route: route id `ruby`, display name `Vibrant Ruby / Fresh Human`, Chinese display names `活力Ruby` / `鲜活人类`, default=false, output_suffix: ruby, route status `active`. Ruby is an energetic orange-bob-haired human personal visual IP with black cat-eye glasses, white or light inner top, red lips, hand-drawn black linework, and an orange hand-drawn connection-line motif. Ruby supports article-body illustrations, avatars, transparent stickers, action sticker libraries, wardrobe variants, and social assets where Ruby herself performs the cognitive or expressive action. Ruby source authority is `references/ips/ruby/source.md`, and planning, generation, QA, edit, and delivery surfaces keep the Ruby identity note, wardrobe note, and `assets/<article-slug>-ruby/`.
 
 Littlebox is an explicit route for a closed paper-box character. It uses thick rough black marker linework, a pale sky-blue or pale lavender background, amber seam tape, and sparse coral accents. It translates the same cognitive action into collecting, packaging, sorting, delivering, blocking, or repairing.
 
@@ -61,6 +63,13 @@ Read `references/routing.md` first, then load only the selected route's required
 - `references/ips/xiaohei/composition-patterns.md`: Xiaohei structure types, original metaphor method, and anti-copy rules.
 - `references/ips/xiaohei/prompt-template.md`: Xiaohei single-image prompt template.
 - `references/ips/xiaohei/qa-checklist.md`: Xiaohei post-generation checks and iteration rules.
+- `references/ips/ruby/index.md`: Ruby canonical pack navigation, route contract, source authority, output path, shared failure categories, and operational coherence.
+- `references/ips/ruby/source.md`: Ruby source record, stable identity markers, wardrobe library, sample policy, and route status.
+- `references/ips/ruby/style-dna.md`: Ruby article/social illustration style, color behavior, visual vetoes, and route isolation gates.
+- `references/ips/ruby/ruby-ip.md`: Ruby identity, personality, action library, recognition gates, and failure modes.
+- `references/ips/ruby/composition-patterns.md`: Ruby composition families, wardrobe/sticker/avatar patterns, action patterns, supporting object pool, and anti-repeat rules.
+- `references/ips/ruby/prompt-template.md`: Ruby planning fields, article prompt, avatar prompt, transparent sticker prompt, edit prompts, and output reminder.
+- `references/ips/ruby/qa-checklist.md`: Ruby post-generation identity, wardrobe, sticker, route leakage, and delivery checks.
 - `references/ips/littlebox/index.md`: Littlebox canonical pack navigation, file responsibilities, source attribution, and output path.
 - `references/ips/littlebox/style-dna.md`: Littlebox visual language, background pool, marker linework, color, labels, and vetoes.
 - `references/ips/littlebox/littlebox-ip.md`: Littlebox closed paper-box identity, tape, arms, lid, actions, and failure modes.
@@ -121,6 +130,7 @@ Read `references/routing.md` first and choose the route for the current task.
 
 - Omitted visual IP selects `xiaohei`.
 - Xiaohei aliases listed in `references/routing.md` select the same Xiaohei route.
+- Ruby aliases listed in `references/routing.md` select the same Ruby route: route id `ruby`, display name `Vibrant Ruby / Fresh Human`, default=false, output_suffix: ruby, route status `active`, source pointer `references/ips/ruby/source.md`.
 - Littlebox aliases listed in `references/routing.md` select the same Littlebox route.
 - Tom aliases listed in `references/routing.md` select the same Tom route: route id `tom`, display name `Tom`, default=false, output_suffix: tom, route status `gated-authorized`, rights pointer `references/ips/tom/rights.md`.
 - Ferris aliases listed in `references/routing.md` select the same Ferris route: route id `ferris`, display name `Ferris`, default=false, output_suffix: ferris, route status `source-reviewed`, source/trademark pointer `references/ips/ferris/source.md`.
@@ -128,8 +138,9 @@ Read `references/routing.md` first and choose the route for the current task.
 - `OpenClaw`, `openclaw`, `OpenClaw logo`, `OpenClaw mascot`, and the OpenClaw aliases listed in `references/routing.md` select the same OpenClaw route: route id `openclaw`, display name `OpenClaw`, default=false, output_suffix: openclaw, route status `source-reviewed`, source/license pointer `references/ips/openclaw/source.md`.
 - `Go Gopher`, `Gopher`, `golang gopher`, `Go mascot`, and Go Gopher-qualified route phrases select the same Go Gopher route: route id `gopher`, display name `Go Gopher`, default=false, output_suffix: gopher, route status `source-reviewed`, source/license pointer `references/ips/gopher/source.md`, and route-local `skills/visual-ip-illustrations/references/ips/gopher/gopher.png` visual authority. Generic route phrases stay governed by `references/routing.md` and remain outside Go Gopher selection.
 - Cai Xukun aliases listed in `references/routing.md` select the same Cai Xukun route: route id `caixukun`, display name `Cai Xukun`, default=false, output_suffix: caixukun, route status `gated-public-figure`, source pointer `references/ips/caixukun/source.md`, and output path `assets/<article-slug>-caixukun/`. Broad celebrity, idol, duck, yellow mascot, and fandom words stay governed by `references/routing.md` and remain outside Cai Xukun selection.
-- Mixed requests across Xiaohei, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun first identify one shared core idea, then create separate route groups. Each selected variant group uses its own route id, required_references, prompt template, composition rules, QA, edit repairs, output_suffix, route note, and output directory.
+- Mixed requests across Xiaohei, Ruby, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun first identify one shared core idea, then create separate route groups. Each selected variant group uses its own route id, required_references, prompt template, composition rules, QA, edit repairs, output_suffix, route note, and output directory.
 - Xiaohei keeps the `$ian-xiaohei-illustrations` compatibility behavior and `assets/<article-slug>-illustrations/` output path; canonical invocation is `$visual-ip-illustrations`.
+- Ruby uses `assets/<article-slug>-ruby/` and keeps `active` plus `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and route-local QA context in planning, generation, QA, edit, and delivery.
 - Littlebox uses `assets/<article-slug>-littlebox/`.
 - Tom uses `assets/<article-slug>-tom/` and keeps `gated-authorized` plus `references/ips/tom/rights.md` in planning, generation, QA, edit, and delivery.
 - Ferris uses `assets/<article-slug>-ferris/` and keeps `source-reviewed` plus `references/ips/ferris/source.md` in planning, generation, QA, edit, and delivery.
@@ -138,6 +149,7 @@ Read `references/routing.md` first and choose the route for the current task.
 - Go Gopher uses `assets/<article-slug>-gopher/` and keeps `source-reviewed`, `references/ips/gopher/source.md`, route-local `skills/visual-ip-illustrations/references/ips/gopher/gopher.png`, Renee French attribution, Creative Commons Attribution 4.0 boundary, public sample review boundary, Go logo boundary, and official endorsement boundary in planning, generation, QA, edit, and delivery.
 - Cai Xukun uses `assets/<article-slug>-caixukun/` and keeps `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, public-figure likeness boundary, source-image context note, public sample review boundary, route isolation status, and neutral article-concept labels after public-figure claim sanitization in planning, generation, QA, edit, and delivery.
 - Xiaohei `required_references` point to the canonical `references/ips/xiaohei/` pack; root paths remain compatibility entry points.
+- Ruby `required_references` point to `references/ips/ruby/`: `index.md`, `source.md`, `style-dna.md`, `ruby-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Littlebox `required_references` point to `references/ips/littlebox/`: `style-dna.md`, `littlebox-ip.md`, `composition-patterns.md`, `language-and-labels.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Tom `required_references` point to `references/ips/tom/`: `index.md`, `rights.md`, `style-dna.md`, `tom-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Ferris `required_references` point to `references/ips/ferris/`: `index.md`, `source.md`, `style-dna.md`, `ferris-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
@@ -171,6 +183,20 @@ When the user asks for planning, analysis, or placement recommendations, return 
 - selected visual IP's central action
 - suggested elements
 - suggested visible labels in the user's language
+
+Ruby shot-list entries use `references/ips/ruby/prompt-template.md` and include:
+
+- Placement
+- Core idea
+- Output mode: `Ruby Article Sketch`, `Ruby Social IP`, `Avatar`, `Transparent Sticker`, `Wardrobe Variant`, `Action Sticker`, or `Mini Comic`
+- Structure type
+- Ruby state
+- Ruby action
+- Supporting objects
+- Visible labels
+- Wardrobe: default Ruby, Japanese City Boy, French Chic, Techwear, Vintage Rock v2, Hip-hop, or requested outfit
+- Output path: `assets/<article-slug>-ruby/`
+- Ruby identity note: preserve orange bob hair, black cat-eye glasses, white or light inner top, red lips, hand-drawn black linework, and orange connection-line motif.
 
 Littlebox shot-list entries also include:
 
@@ -273,6 +299,7 @@ Cai Xukun planning prose can follow the user's language. Cai Xukun image-generat
 Mixed-IP shot lists first state the shared core idea, then split into independent selected route groups:
 
 - Xiaohei variant group: Xiaohei action, white-background hand-drawn metaphor, suggested labels, `references/ips/xiaohei/` QA, `assets/<article-slug>-illustrations/`
+- Ruby variant group: Ruby state, Ruby action, wardrobe mode if relevant, supporting objects, visible labels, `references/ips/ruby/` QA, `assets/<article-slug>-ruby/`, Ruby identity note, wardrobe note, `active`, `references/ips/ruby/source.md`
 - Littlebox variant group: `Littlebox state: closed`, visual metaphor, assigned background, suggested objects, short visible labels, `references/ips/littlebox/` QA, `assets/<article-slug>-littlebox/`
 - Tom variant group: Tom state, Tom action, supporting objects, visible labels, `references/ips/tom/` QA, `assets/<article-slug>-tom/`, rights-status note, `gated-authorized`, `references/ips/tom/rights.md`
 - Ferris variant group: Ferris state, Ferris action, supporting objects, visible labels, `references/ips/ferris/` QA, `assets/<article-slug>-ferris/`, source/trademark note, `source-reviewed`, `references/ips/ferris/source.md`
@@ -288,6 +315,19 @@ Default to 4-8 images. Short articles usually need 1-3. Long articles usually st
 When the user explicitly asks to generate, output, make, or create images, call the host-provided `image_gen` capability directly. Compatibility markers: generate each image separately; keep each image on its own canvas. Use one image-generation call per image.
 
 Each image explains one core structure. Load the selected route's `required_references`, then assemble the prompt with that IP's template, character rules, composition rules, and QA references.
+
+Ruby loads only Ruby `required_references`, uses `references/ips/ruby/prompt-template.md` plus `references/ips/ruby/composition-patterns.md`, then checks output with `references/ips/ruby/qa-checklist.md`. Ruby generation context always keeps route status `active`, source authority `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and output path `assets/<article-slug>-ruby/`. Ruby prompts keep:
+
+- article illustrations, avatars, transparent stickers, wardrobe variants, action sticker libraries, and social assets
+- clean hand-drawn/anime-line personal-IP style on clean white or near-white background
+- vivid orange bob hair, black cat-eye glasses, warm confident human face, red lips/smile accent, and white or light inner top
+- orange hand-drawn connection-line/cable motif as the signature action/path element
+- Ruby as the central cognitive or expressive action subject
+- requested wardrobe cues when using Japanese City Boy, French Chic, Techwear, Vintage Rock v2, Hip-hop, or a new outfit
+- route status note: `active`
+- source authority: `references/ips/ruby/source.md`
+- save reminder: `assets/<article-slug>-ruby/`
+- Ruby route block: generic anime-girl drift, missing orange hair, missing black cat-eye glasses, wrong glasses shape, missing orange connection line, changed face identity, passive decoration, over-glam fashion poster, realistic photo drift, chibi drift, excessive text, route leakage, and copied composition all fail the route
 
 Xiaohei continues to use the canonical references: `references/ips/xiaohei/style-dna.md`, `references/ips/xiaohei/xiaohei-ip.md`, `references/ips/xiaohei/composition-patterns.md`, `references/ips/xiaohei/prompt-template.md`, and `references/ips/xiaohei/qa-checklist.md`. Legacy root paths `references/style-dna.md`, `references/xiaohei-ip.md`, `references/composition-patterns.md`, `references/prompt-template.md`, and `references/qa-checklist.md` remain legacy compatibility entry points. Xiaohei prompts keep these markers:
 
@@ -429,11 +469,11 @@ Cai Xukun loads only Cai Xukun `required_references`, uses `references/ips/caixu
 
 Cai Xukun repair behavior uses the edit prompts in `references/ips/caixukun/prompt-template.md`: Stronger Cai Xukun Participation, Uploaded-Image Identity Repair, Title Removal, Text Reduction, Public-Figure Likeness Boundary Repair, Route Leakage Repair, Green-Background Carryover Repair, and Unaffected-Content Preservation. Every repair keeps `gated-public-figure`, source pointer `references/ips/caixukun/source.md`, uploaded-image identity note, public-figure likeness boundary, source-image context boundary, public sample review boundary, route-local QA context, route isolation status, and `assets/<article-slug>-caixukun/`.
 
-Mixed-IP generation uses the same shared core idea to generate separated selected route groups. Xiaohei loads only `references/ips/xiaohei/`; Littlebox loads only `references/ips/littlebox/`; Tom loads only `references/ips/tom/`; Ferris loads only `references/ips/ferris/`; Seal loads only `references/ips/seal/`; OpenClaw loads only `references/ips/openclaw/`; Go Gopher loads only `references/ips/gopher/`; Cai Xukun loads only `references/ips/caixukun/`. Each group calls its own prompt template, composition rules, language rules, qa-checklist, edit gates, output_suffix, and route note. Go Gopher uses its own prompt template, composition rules, QA checklist, edit gates, output suffix, route note, and `assets/<article-slug>-gopher/`. Cai Xukun uses its own prompt template, composition rules, QA checklist, edit gates, output suffix, route note, and `assets/<article-slug>-caixukun/`, with uploaded-image identity status, public-figure likeness boundary status, source-image context status, public sample review boundary, and route isolation status. `assets/examples/` only calibrates style density and character participation; current-article metaphors are invented fresh.
+Mixed-IP generation uses the same shared core idea to generate separated selected route groups. Xiaohei loads only `references/ips/xiaohei/`; Ruby loads only `references/ips/ruby/`; Littlebox loads only `references/ips/littlebox/`; Tom loads only `references/ips/tom/`; Ferris loads only `references/ips/ferris/`; Seal loads only `references/ips/seal/`; OpenClaw loads only `references/ips/openclaw/`; Go Gopher loads only `references/ips/gopher/`; Cai Xukun loads only `references/ips/caixukun/`. Each group calls its own prompt template, composition rules, language rules, qa-checklist, edit gates, output_suffix, and route note. Ruby uses its own prompt template, composition rules, QA checklist, edit gates, output suffix, route note, and `assets/<article-slug>-ruby/`. Go Gopher uses its own prompt template, composition rules, QA checklist, edit gates, output suffix, route note, and `assets/<article-slug>-gopher/`. Cai Xukun uses its own prompt template, composition rules, QA checklist, edit gates, output suffix, route note, and `assets/<article-slug>-caixukun/`, with uploaded-image identity status, public-figure likeness boundary status, source-image context status, public sample review boundary, and route isolation status. `assets/examples/` only calibrates style density and character participation; current-article metaphors are invented fresh.
 
 ### 5. QA and Iteration
 
-After generation, check the selected IP's QA reference. Xiaohei uses `references/ips/xiaohei/qa-checklist.md`; Littlebox uses `references/ips/littlebox/qa-checklist.md`; Tom uses `references/ips/tom/qa-checklist.md`; Ferris uses `references/ips/ferris/qa-checklist.md`; Seal uses `references/ips/seal/qa-checklist.md`; OpenClaw uses `references/ips/openclaw/qa-checklist.md`; Go Gopher uses `references/ips/gopher/qa-checklist.md`; Cai Xukun uses `references/ips/caixukun/qa-checklist.md`; `references/qa-checklist.md` remains the legacy root compatibility entry point.
+After generation, check the selected IP's QA reference. Xiaohei uses `references/ips/xiaohei/qa-checklist.md`; Ruby uses `references/ips/ruby/qa-checklist.md`; Littlebox uses `references/ips/littlebox/qa-checklist.md`; Tom uses `references/ips/tom/qa-checklist.md`; Ferris uses `references/ips/ferris/qa-checklist.md`; Seal uses `references/ips/seal/qa-checklist.md`; OpenClaw uses `references/ips/openclaw/qa-checklist.md`; Go Gopher uses `references/ips/gopher/qa-checklist.md`; Cai Xukun uses `references/ips/caixukun/qa-checklist.md`; `references/qa-checklist.md` remains the legacy root compatibility entry point.
 
 Xiaohei high-risk failures:
 
@@ -444,6 +484,22 @@ Xiaohei high-risk failures:
 - top-left titles such as `Common Pitfalls`, `Flowchart`, or `System Architecture`
 - overly cute, childish, or stiff style
 - background drift away from clean white
+
+Ruby high-risk failures:
+
+- generic anime-girl drift
+- missing orange hair
+- missing black cat-eye glasses
+- wrong glasses shape
+- missing hand-drawn orange connection line
+- changed face identity
+- passive decoration
+- over-glam fashion poster
+- realistic photo drift
+- chibi drift
+- excessive text
+- route leakage
+- copied composition
 
 Littlebox high-risk failures:
 
@@ -592,7 +648,7 @@ Cai Xukun high-risk failures:
 - missing `references/ips/caixukun/source.md`
 - missing `assets/<article-slug>-caixukun/`
 
-When QA finds a failure, regenerate or edit through the selected IP's qa-checklist. Littlebox repairs prioritize closed lid, side-seam arms, single amber jagged seam tape, near-white body, rough linework, user's-language labels, balanced background, and active placement. Tom repairs use `references/ips/tom/prompt-template.md` edit gates: Tom edit participation repair gate, Tom off-model identity repair gate, Tom title removal edit gate, Tom text reduction edit gate, and Tom unaffected-content preservation gate; every repair keeps `gated-authorized`, `references/ips/tom/rights.md`, and route-local QA context. Ferris repairs use `references/ips/ferris/prompt-template.md` edit gates: participation, identity, trademark-boundary, title removal, text reduction, and unaffected-content preservation; every repair keeps `source-reviewed`, `references/ips/ferris/source.md`, source/trademark note, and route-local QA context. Seal repairs use `references/ips/seal/prompt-template.md` edit prompts; every repair keeps `active`, `references/ips/seal/source.md`, hoodie seal identity note, Logo-free note, product-neutral article metaphor context, route-local QA context, and `assets/<article-slug>-seal/`. OpenClaw repairs use `references/ips/openclaw/prompt-template.md` edit prompts; every repair keeps `source-reviewed`, `references/ips/openclaw/source.md`, uploaded-logo identity note, source/license note, original article-metaphor context, route-local QA context, and `assets/<article-slug>-openclaw/`. Go Gopher repairs use `references/ips/gopher/prompt-template.md` edit prompts; every repair keeps `source-reviewed`, `references/ips/gopher/source.md`, route-local `gopher.png` identity note, source/license note, original article-metaphor context, route-local QA context, public sample review boundary, route isolation status, and `assets/<article-slug>-gopher/`. Cai Xukun uses `references/ips/caixukun/qa-checklist.md` and repairs through `references/ips/caixukun/prompt-template.md`; every repair keeps `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, public-figure likeness boundary, source-image context boundary, public sample review boundary, route-local QA context, route isolation status, and `assets/<article-slug>-caixukun/`.
+When QA finds a failure, regenerate or edit through the selected IP's qa-checklist. Ruby repairs use `references/ips/ruby/prompt-template.md` edit gates: Ruby Identity Repair, Stronger Ruby Participation, Text Reduction, and Wardrobe Continuity Repair; every repair keeps `active`, `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, route-local QA context, and `assets/<article-slug>-ruby/`. Littlebox repairs prioritize closed lid, side-seam arms, single amber jagged seam tape, near-white body, rough linework, user's-language labels, balanced background, and active placement. Tom repairs use `references/ips/tom/prompt-template.md` edit gates: Tom edit participation repair gate, Tom off-model identity repair gate, Tom title removal edit gate, Tom text reduction edit gate, and Tom unaffected-content preservation gate; every repair keeps `gated-authorized`, `references/ips/tom/rights.md`, and route-local QA context. Ferris repairs use `references/ips/ferris/prompt-template.md` edit gates: participation, identity, trademark-boundary, title removal, text reduction, and unaffected-content preservation; every repair keeps `source-reviewed`, `references/ips/ferris/source.md`, source/trademark note, and route-local QA context. Seal repairs use `references/ips/seal/prompt-template.md` edit prompts; every repair keeps `active`, `references/ips/seal/source.md`, hoodie seal identity note, Logo-free note, product-neutral article metaphor context, route-local QA context, and `assets/<article-slug>-seal/`. OpenClaw repairs use `references/ips/openclaw/prompt-template.md` edit prompts; every repair keeps `source-reviewed`, `references/ips/openclaw/source.md`, uploaded-logo identity note, source/license note, original article-metaphor context, route-local QA context, and `assets/<article-slug>-openclaw/`. Go Gopher repairs use `references/ips/gopher/prompt-template.md` edit prompts; every repair keeps `source-reviewed`, `references/ips/gopher/source.md`, route-local `gopher.png` identity note, source/license note, original article-metaphor context, route-local QA context, public sample review boundary, route isolation status, and `assets/<article-slug>-gopher/`. Cai Xukun uses `references/ips/caixukun/qa-checklist.md` and repairs through `references/ips/caixukun/prompt-template.md`; every repair keeps `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, public-figure likeness boundary, source-image context boundary, public sample review boundary, route-local QA context, route isolation status, and `assets/<article-slug>-caixukun/`.
 
 ### 6. Save and Deliver
 
@@ -602,6 +658,7 @@ Active route paths:
 
 ```text
 assets/<article-slug>-illustrations/
+assets/<article-slug>-ruby/
 assets/<article-slug>-littlebox/
 assets/<article-slug>-tom/
 assets/<article-slug>-ferris/
@@ -614,6 +671,7 @@ assets/<article-slug>-caixukun/
 The save path comes from `references/routing.md` `output_suffix`:
 
 - Xiaohei `output_suffix: illustrations` -> `assets/<article-slug>-illustrations/`
+- Ruby `output_suffix: ruby` -> `assets/<article-slug>-ruby/`
 - Littlebox `output_suffix: littlebox` -> `assets/<article-slug>-littlebox/`
 - Tom `output_suffix: tom` -> `assets/<article-slug>-tom/`
 - Ferris `output_suffix: ferris` -> `assets/<article-slug>-ferris/`
@@ -621,7 +679,7 @@ The save path comes from `references/routing.md` `output_suffix`:
 - OpenClaw `output_suffix: openclaw` -> `assets/<article-slug>-openclaw/`
 - Go Gopher `output_suffix: gopher` -> `assets/<article-slug>-gopher/`
 - Cai Xukun `output_suffix: caixukun` -> `assets/<article-slug>-caixukun/`
-- Validation markers: Xiaohei `assets/&lt;article-slug&gt;-illustrations/`; Littlebox `assets/&lt;article-slug&gt;-littlebox/`; Tom `assets/&lt;article-slug&gt;-tom/`; Ferris `assets/&lt;article-slug&gt;-ferris/`; Seal `assets/&lt;article-slug&gt;-seal/`; OpenClaw `assets/&lt;article-slug&gt;-openclaw/`; Go Gopher `assets/&lt;article-slug&gt;-gopher/`; Cai Xukun `assets/&lt;article-slug&gt;-caixukun/`
+- Validation markers: Xiaohei `assets/&lt;article-slug&gt;-illustrations/`; Ruby `assets/&lt;article-slug&gt;-ruby/`; Littlebox `assets/&lt;article-slug&gt;-littlebox/`; Tom `assets/&lt;article-slug&gt;-tom/`; Ferris `assets/&lt;article-slug&gt;-ferris/`; Seal `assets/&lt;article-slug&gt;-seal/`; OpenClaw `assets/&lt;article-slug&gt;-openclaw/`; Go Gopher `assets/&lt;article-slug&gt;-gopher/`; Cai Xukun `assets/&lt;article-slug&gt;-caixukun/`
 
 Use ordered English slug filenames:
 
@@ -630,7 +688,7 @@ Use ordered English slug filenames:
 02-topic-name.png
 ```
 
-Seal accepted outputs use ordered English slug filenames such as `01-topic-name.png`. OpenClaw accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Go Gopher accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Cai Xukun accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Mixed-IP requests write each separate route group to its own output directory: Xiaohei to `assets/<article-slug>-illustrations/`, Littlebox to `assets/<article-slug>-littlebox/`, Tom to `assets/<article-slug>-tom/`, Ferris to `assets/<article-slug>-ferris/`, Seal to `assets/<article-slug>-seal/`, OpenClaw to `assets/<article-slug>-openclaw/`, Go Gopher variants to `assets/<article-slug>-gopher/`, and Cai Xukun variants to `assets/<article-slug>-caixukun/`. Each variant group keeps its own file sequence and purpose notes.
+Ruby accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Seal accepted outputs use ordered English slug filenames such as `01-topic-name.png`. OpenClaw accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Go Gopher accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Cai Xukun accepted outputs use ordered English slug filenames such as `01-topic-name.png`. Mixed-IP requests write each separate route group to its own output directory: Xiaohei to `assets/<article-slug>-illustrations/`, Ruby to `assets/<article-slug>-ruby/`, Littlebox to `assets/<article-slug>-littlebox/`, Tom to `assets/<article-slug>-tom/`, Ferris to `assets/<article-slug>-ferris/`, Seal to `assets/<article-slug>-seal/`, OpenClaw to `assets/<article-slug>-openclaw/`, Go Gopher variants to `assets/<article-slug>-gopher/`, and Cai Xukun variants to `assets/<article-slug>-caixukun/`. Each variant group keeps its own file sequence and purpose notes.
 
 Compatibility marker: preserve original generated files. Preserve original generated files and choose new filenames for new accepted outputs.
 
@@ -649,6 +707,7 @@ When the selected visual IP is `Cai Xukun`, post-generation delivery must includ
 Mixed-IP delivery uses one block per IP:
 
 - Xiaohei block: shared core idea, image purposes, save path `assets/<article-slug>-illustrations/`, stability notes
+- Ruby block: selected IP `Ruby / 活力Ruby / 鲜活人类`, shared core idea, image purposes, save path `assets/<article-slug>-ruby/`, route status `active`, source pointer `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and stability notes
 - Littlebox block: shared core idea, image purposes, save path `assets/<article-slug>-littlebox/`, assigned background, stability notes
 - Tom block: selected IP `Tom`, shared core idea, image purposes, save path `assets/<article-slug>-tom/`, route status `gated-authorized`, rights note `references/ips/tom/rights.md`, stability notes
 - Ferris block: selected IP `Ferris`, shared core idea, image purposes, save path `assets/<article-slug>-ferris/`, route status `source-reviewed`, source/trademark note, source pointer `references/ips/ferris/source.md`, stability notes
@@ -657,4 +716,4 @@ Mixed-IP delivery uses one block per IP:
 - Go Gopher block: selected IP `Go Gopher`, shared core idea, image purposes, save path `assets/<article-slug>-gopher/`, route status `source-reviewed`, source/license note, source pointer `references/ips/gopher/source.md`, route-local `gopher.png` identity status, public sample review boundary when relevant, route isolation status, stability notes
 - Cai Xukun block: selected IP `Cai Xukun`, shared core idea for mixed-IP work, image count, purpose per image, save path `assets/<article-slug>-caixukun/`, route status `gated-public-figure`, source authority note, source pointer `references/ips/caixukun/source.md`, uploaded-image identity status, public-figure likeness boundary status, source-image context status, route isolation status, public sample review boundary when relevant, route stability notes
 
-Before delivery, run the route-leakage delivery guard. Tom blocks keep `gated-authorized` and `references/ips/tom/rights.md`. Ferris blocks keep `source-reviewed`, `references/ips/ferris/source.md`, source/trademark note, route-local QA, and `assets/<article-slug>-ferris/`. Seal blocks keep `active`, `references/ips/seal/source.md`, hoodie seal identity note, route-local QA, source-history provenance markers, Logo-free note, product-neutral article-metaphor status, and `assets/<article-slug>-seal/`. OpenClaw blocks keep `source-reviewed`, `references/ips/openclaw/source.md`, source/license note, uploaded-logo identity note, route-local QA, original article-metaphor status, route isolation status, and `assets/<article-slug>-openclaw/`. Go Gopher blocks keep `source-reviewed`, `references/ips/gopher/source.md`, source/license note, route-local `gopher.png` identity status, route-local QA, original article-metaphor status, public sample review boundary, route isolation status, and `assets/<article-slug>-gopher/`. Cai Xukun blocks keep `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, route-local QA, public-figure likeness boundary, source-image context boundary, public sample review boundary, route isolation status, and `assets/<article-slug>-caixukun/`, and prompt/report text must use the source pointer rather than maintainer-local source-image paths. Xiaohei and Littlebox blocks keep their route-local wording, QA, and output directories.
+Before delivery, run the route-leakage delivery guard. Ruby blocks keep `active`, `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, route-local QA, and `assets/<article-slug>-ruby/`. Tom blocks keep `gated-authorized` and `references/ips/tom/rights.md`. Ferris blocks keep `source-reviewed`, `references/ips/ferris/source.md`, source/trademark note, route-local QA, and `assets/<article-slug>-ferris/`. Seal blocks keep `active`, `references/ips/seal/source.md`, hoodie seal identity note, route-local QA, source-history provenance markers, Logo-free note, product-neutral article-metaphor status, and `assets/<article-slug>-seal/`. OpenClaw blocks keep `source-reviewed`, `references/ips/openclaw/source.md`, source/license note, uploaded-logo identity note, route-local QA, original article-metaphor status, route isolation status, and `assets/<article-slug>-openclaw/`. Go Gopher blocks keep `source-reviewed`, `references/ips/gopher/source.md`, source/license note, route-local `gopher.png` identity status, route-local QA, original article-metaphor status, public sample review boundary, route isolation status, and `assets/<article-slug>-gopher/`. Cai Xukun blocks keep `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, route-local QA, public-figure likeness boundary, source-image context boundary, public sample review boundary, route isolation status, and `assets/<article-slug>-caixukun/`, and prompt/report text must use the source pointer rather than maintainer-local source-image paths. Xiaohei and Littlebox blocks keep their route-local wording, QA, and output directories.
