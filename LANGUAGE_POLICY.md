@@ -22,7 +22,7 @@ English is the default for every maintainer-facing and public repository surface
 
 Approved multilingual content is limited to compatibility and user-output surfaces that carry product behavior:
 
-- route aliases, including exact Chinese aliases such as `小黑`, `小盒`, `纸盒`, `汤姆`, `汤姆猫`, `Rust 吉祥物`, `Rust 螃蟹`, `Sealos 吉祥物`, and `Sealos 海豹`
+- route aliases, including exact Chinese aliases such as `小黑`, `小盒`, `纸盒`, `汤姆`, `汤姆猫`, `Rust 吉祥物`, `Rust 螃蟹`, `Sealos 吉祥物`, `Sealos 海豹`, and `近野绿`
 - user-language visible labels copied into generated-image prompts or delivery text
 - prompt placeholders such as `{正文配图主题}`, `{结构类型：Workflow / 系统局部 / 前后对比 / 角色状态 / 概念隐喻 / 方法分层 / 地图路线 / 小漫画分镜}`, and `{标注词1}`
 - attribution/source names that must remain exact for source, rights, brand, copyright, trademark, or author records
@@ -62,11 +62,11 @@ The language migration preserves these compatibility surfaces:
 
 - canonical invocation `$visual-ip-illustrations`
 - legacy invocation `$ian-xiaohei-illustrations`
-- route ids: `xiaohei`, `littlebox`, `tom`, `ferris`, and `sealos`
+- route ids: `xiaohei`, `littlebox`, `tom`, `ferris`, `sealos`, and `nearwild-green`
 - route aliases, including Chinese aliases listed in `skills/visual-ip-illustrations/references/routing.md`
 - default flags, with Xiaohei as the omitted-IP default
-- output suffixes: `illustrations`, `littlebox`, `tom`, `ferris`, and `sealos`
-- output paths: `assets/<article-slug>-illustrations/`, `assets/<article-slug>-littlebox/`, `assets/<article-slug>-tom/`, `assets/<article-slug>-ferris/`, and `assets/<article-slug>-sealos/`
+- output suffixes: `illustrations`, `littlebox`, `tom`, `ferris`, `sealos`, and `nearwild-green`
+- output paths: `assets/<article-slug>-illustrations/`, `assets/<article-slug>-littlebox/`, `assets/<article-slug>-tom/`, `assets/<article-slug>-ferris/`, `assets/<article-slug>-sealos/`, and `assets/<article-slug>-nearwild-green/`
 - escaped output path markers used by docs validation
 - required references listed in the route table
 - source, rights, and brand records

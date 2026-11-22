@@ -165,6 +165,47 @@ const LANGUAGE_ALLOWLIST = [
     rationale: "Seal Chinese route alias compatibility.",
     remediation: "Keep the exact route alias and translate surrounding prose in the planned public-docs migration phase.",
   })),
+  ...["活力Ruby", "鲜活人类"].map((token) => ({
+    category: "route aliases",
+    paths: [
+      path.join(REFERENCES_DIR, "ips", "ruby", "index.md"),
+      path.join(REFERENCES_DIR, "ips", "ruby", "source.md"),
+      path.join(REFERENCES_DIR, "ips", "ruby", "ruby-ip.md"),
+      path.join(REFERENCES_DIR, "ips", "ruby", "prompt-template.md"),
+      path.join(REFERENCES_DIR, "ips", "ruby", "qa-checklist.md"),
+    ],
+    token,
+    rationale: "Ruby route-local identity docs preserve the approved Chinese display names.",
+    remediation: "Keep the exact Ruby identity alias in the route-local authority files.",
+  })),
+  ...["活力Ruby", "鲜活人类", "Ruby头像", "Ruby贴纸", "Ruby衣柜"].map((token) => ({
+    category: "route aliases",
+    paths: [LANGUAGE_POLICY_FILE, ROUTING_FILE, SKILL_FILE, "README.md"],
+    token,
+    rationale: "Ruby Chinese route alias compatibility.",
+    remediation: "Keep the exact Ruby route alias in route-compatible public surfaces.",
+  })),
+  ...["小番茄", "番茄", "番茄西红柿"].map((token) => ({
+    category: "route aliases",
+    paths: [LANGUAGE_POLICY_FILE, ROUTING_FILE, SKILL_FILE, "README.md"],
+    token,
+    rationale: "Tomato Chinese route alias compatibility.",
+    remediation: "Keep the exact Tomato route alias in route-compatible public surfaces.",
+  })),
+  ...["小番茄", "番茄", "番茄西红柿"].map((token) => ({
+    category: "route aliases",
+    paths: [path.join(REFERENCES_DIR, "ips", "tomato", "index.md")],
+    token,
+    rationale: "Tomato route-local identity docs preserve the approved Chinese product-mascot names.",
+    remediation: "Keep the exact Tomato identity alias in the route-local authority files.",
+  })),
+  {
+    category: "route aliases",
+    paths: [LANGUAGE_POLICY_FILE, ROUTING_FILE, SKILL_FILE, "README.md"],
+    token: "近野绿",
+    rationale: "Nearwild Green IP Chinese route alias compatibility.",
+    remediation: "Keep the exact Nearwild Green route alias in route-compatible public surfaces.",
+  },
   ...["OpenClaw 助手", "OpenClaw 吉祥物"].map((token) => ({
     category: "route aliases",
     paths: [ROUTING_FILE],
@@ -2374,6 +2415,14 @@ function rebrandRouteExpectations() {
       referenceCount: 7,
     },
     {
+      id: "nearwild-green",
+      aliases: ["Nearwild Green IP", "Nearwild Green", "Nearwild", "近野绿", "Nearwild Green mascot"],
+      default: "false",
+      status: "active",
+      outputSuffix: "nearwild-green",
+      referenceCount: 7,
+    },
+    {
       id: "tomato",
       aliases: ["Tomato", "Tomato Studio", "小番茄", "番茄", "番茄西红柿"],
       default: "false",
@@ -3180,7 +3229,7 @@ const checks = [
   defineCheck("ROUTE-REFS-001", "routing.md required_references resolve inside the package", () => {
     for (const row of routeRows()) {
       const references = routeReferencePaths(row);
-      const expectedCounts = { xiaohei: 5, ruby: 7, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7, tomato: 7 };
+      const expectedCounts = { xiaohei: 5, ruby: 7, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7, "nearwild-green": 7, tomato: 7 };
       const expectedCount = expectedCounts[row.id];
       if (references.length !== expectedCount) {
         throw new Error(
@@ -5408,6 +5457,8 @@ const checks = [
       "gopher",
       "Cai Xukun",
       "caixukun",
+      "Nearwild Green IP",
+      "nearwild-green",
     ], "stable route display names and output suffix markers");
   }),
   defineCheck("REBRAND-COMPAT-001", "runtime metadata preserves legacy alias compatibility", () => {

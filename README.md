@@ -4,7 +4,7 @@
 
 [![skills.sh](https://skills.sh/b/yangchuansheng/visual-ip-illustrations)](https://skills.sh/yangchuansheng/visual-ip-illustrations)
 
-> Visual IP Illustrations is a multi-visual-IP Codex Skill for article body illustrations. Xiaohei is the implicit default route; Littlebox is explicit and active; Tom is an explicit protected-character route with status `gated-authorized`; Ferris is an explicit Rust-community mascot route with status `source-reviewed`; Seal is an explicit product-neutral hoodie seal route with status `active`; OpenClaw is an explicit logo-mascot route with status `source-reviewed`. Tomato is an explicit active product mascot route for Tomato Studio workflows. Go Gopher is an explicit source-reviewed article-illustration mascot route with output path `assets/<article-slug>-gopher/`. Cai Xukun is an explicit `gated-public-figure` stylized mascot-only route with aliases `蔡徐坤`, `caixukun`, and `cxk`, source pointer `skills/visual-ip-illustrations/references/ips/caixukun/source.md`, output path `assets/<article-slug>-caixukun/`, uploaded-image authority, public-figure likeness boundary, source-image context boundary, public sample review gate, route isolation, and safety review for endorsement, affiliation, impersonation, campaign, advertising, and fandom-promotion claims.
+> Visual IP Illustrations is a multi-visual-IP Codex Skill for article body illustrations. Xiaohei is the implicit default route; Littlebox is explicit and active; Tom is an explicit protected-character route with status `gated-authorized`; Ferris is an explicit Rust-community mascot route with status `source-reviewed`; Seal is an explicit product-neutral hoodie seal route with status `active`; OpenClaw is an explicit logo-mascot route with status `source-reviewed`. Tomato is an explicit active product mascot route for Tomato Studio workflows. Nearwild Green IP is an explicit active fictional Nearwild mascot route for discovery, inbound travel, and partner delivery workflows. Go Gopher is an explicit source-reviewed article-illustration mascot route with output path `assets/<article-slug>-gopher/`. Cai Xukun is an explicit `gated-public-figure` stylized mascot-only route with aliases `蔡徐坤`, `caixukun`, and `cxk`, source pointer `skills/visual-ip-illustrations/references/ips/caixukun/source.md`, output path `assets/<article-slug>-caixukun/`, uploaded-image authority, public-figure likeness boundary, source-image context boundary, public sample review gate, route isolation, and safety review for endorsement, affiliation, impersonation, campaign, advertising, and fandom-promotion claims.
 >
 > 16:9 horizontal | multi visual IP | article body illustrations | Canonical invocation: `$visual-ip-illustrations`
 
@@ -60,6 +60,7 @@ Release 1.4 public identity uses `Visual IP Illustrations`, canonical local chec
 - Go Gopher outputs to workspace path `assets/<article-slug>-gopher/`.
 - Cai Xukun outputs to workspace path `assets/<article-slug>-caixukun/`.
 - Tomato outputs to workspace path `assets/<article-slug>-tomato/`.
+- Nearwild Green IP outputs to workspace path `assets/<article-slug>-nearwild-green/`.
 
 Docs validation also keeps HTML-escaped path markers: `assets/&lt;article-slug&gt;-illustrations/`, `assets/&lt;article-slug&gt;-littlebox/`, `assets/&lt;article-slug&gt;-tom/`, `assets/&lt;article-slug&gt;-ferris/`, `assets/&lt;article-slug&gt;-seal/`, and `assets/&lt;article-slug&gt;-openclaw/`.
 Docs validation also keeps Go Gopher escaped marker: `assets/&lt;article-slug&gt;-gopher/`.
@@ -105,6 +106,12 @@ Tomato is the active product-mascot route for Tomato Studio: a round red tomato 
 
 Aliases: `Tomato`, `Tomato Studio`; Chinese aliases are listed in `skills/visual-ip-illustrations/references/routing.md`.
 
+### Nearwild Green IP
+
+Nearwild Green IP is an original fictional Nearwild mascot: a moss-green fox-like local explorer with a rust-red scarf, paper map, and canvas satchel. It is used for discovery, route planning, trust checkpoints, partner handoffs, delivery cases, and product thinking. It is not a real person, guide, partner, or third-party character.
+
+Aliases: `Nearwild Green IP`, `Nearwild Green`, `Nearwild`, `近野绿`.
+
 ### OpenClaw
 
 OpenClaw is an explicit logo-mascot route: the official red round OpenClaw logo character performs one article concept through friendly inspecting, holding, bridging, sorting, lifting, or signaling actions. It works well for workflow clarity, compatibility checks, model/tool coordination, review gates, and source-reviewed project metaphors.
@@ -137,6 +144,7 @@ Canonical packs:
 - Ferris: `skills/visual-ip-illustrations/references/ips/ferris/`, source/trademark authority `skills/visual-ip-illustrations/references/ips/ferris/source.md`
 - Seal: `skills/visual-ip-illustrations/references/ips/seal/`, source-history authority `skills/visual-ip-illustrations/references/ips/seal/source.md`
 - OpenClaw: `skills/visual-ip-illustrations/references/ips/openclaw/`, source/license authority `skills/visual-ip-illustrations/references/ips/openclaw/source.md`
+- Nearwild Green IP: `skills/visual-ip-illustrations/references/ips/nearwild-green/`, source authority `skills/visual-ip-illustrations/references/ips/nearwild-green/source.md`
 - Go Gopher: `skills/visual-ip-illustrations/references/ips/gopher/`, source/license authority `skills/visual-ip-illustrations/references/ips/gopher/source.md`
 - Cai Xukun: `skills/visual-ip-illustrations/references/ips/caixukun/`, source authority `skills/visual-ip-illustrations/references/ips/caixukun/source.md`
 
