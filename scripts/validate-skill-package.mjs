@@ -2310,6 +2310,14 @@ function rebrandRouteExpectations() {
       referenceCount: 5,
     },
     {
+      id: "ruby",
+      aliases: ["Ruby", "Vibrant Ruby", "Fresh Human", "活力Ruby", "鲜活人类", "Ruby IP", "Ruby头像", "Ruby贴纸", "Ruby衣柜"],
+      default: "false",
+      status: "active",
+      outputSuffix: "ruby",
+      referenceCount: 7,
+    },
+    {
       id: "littlebox",
       aliases: ["小盒", "Littlebox", "纸盒", "paper-box", "carton"],
       default: "false",
@@ -2363,6 +2371,14 @@ function rebrandRouteExpectations() {
       default: "false",
       status: "gated-public-figure",
       outputSuffix: "caixukun",
+      referenceCount: 7,
+    },
+    {
+      id: "tomato",
+      aliases: ["Tomato", "Tomato Studio", "小番茄", "番茄", "番茄西红柿"],
+      default: "false",
+      status: "active",
+      outputSuffix: "tomato",
       referenceCount: 7,
     },
   ];
@@ -3164,7 +3180,7 @@ const checks = [
   defineCheck("ROUTE-REFS-001", "routing.md required_references resolve inside the package", () => {
     for (const row of routeRows()) {
       const references = routeReferencePaths(row);
-      const expectedCounts = { xiaohei: 5, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7 };
+      const expectedCounts = { xiaohei: 5, ruby: 7, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7, tomato: 7 };
       const expectedCount = expectedCounts[row.id];
       if (references.length !== expectedCount) {
         throw new Error(

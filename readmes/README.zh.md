@@ -29,6 +29,7 @@ Visual IP Illustrations 引导 AI agent 为文章、帖子、博客、Notion 文
 - **Tom**：显式 protected-character 路线。请求里出现 `Tom`、`Tom Cat`、`Tom and Jerry`、`汤姆` 或 `汤姆猫` 时使用 Tom 路线。
 - **Ferris**：显式 Rust-community mascot 路线。请求里出现 `Ferris`、`Rust mascot`、`Rust crab`、`Rustacean`、`Rust 吉祥物` 或 `Rust 螃蟹` 时使用 Ferris 路线。
 - **Seal**：显式 product-neutral hoodie seal 路线。请求里出现 `Seal`、`hoodie seal`、`white seal`、`blue hoodie seal`、`海豹`、`连帽衫海豹`、`白色海豹` 或 `蓝色连帽衫海豹` 时使用 Seal 路线。
+- **Tomato / 小番茄**：显式 active 产品吉祥物路线，用于番茄西红柿的工作流、工作台和 creator-to-commerce 图示；与 Ruby 的个人视觉 IP 分开。
 - **OpenClaw**：显式 logo-mascot 路线，状态为 `source-reviewed`。请求里出现 `OpenClaw`、`openclaw`、`OpenClaw logo`、`OpenClaw mascot` 或 `skills/visual-ip-illustrations/references/routing.md` 中列出的 OpenClaw 别名时使用 OpenClaw 路线。
 - **Go Gopher**: explicit source-reviewed article-illustration mascot route. Requests that name `Go Gopher`, `Gopher`, `golang gopher`, `Go mascot`, `Go 吉祥物`, `Gopher 吉祥物`, or Go Gopher aliases listed in `skills/visual-ip-illustrations/references/routing.md` use the Go Gopher route.
 - **Cai Xukun**: explicit `gated-public-figure` stylized mascot-only route. Requests that name `Cai Xukun`, `蔡徐坤`, `caixukun`, or `cxk` use the Cai Xukun route with uploaded-image authority, public-figure likeness boundary, source-image context boundary, public sample review gate, route isolation, source pointer `skills/visual-ip-illustrations/references/ips/caixukun/source.md`, output path `assets/<article-slug>-caixukun/`, and safety review for endorsement, affiliation, impersonation, campaign, advertising, and fandom-promotion claims.
@@ -59,6 +60,7 @@ Release 1.4 的公开身份使用 `Visual IP Illustrations`，标准本地检出
 - OpenClaw 输出到工作区路径 `assets/<article-slug>-openclaw/`。
 - Go Gopher 输出到工作区路径 `assets/<article-slug>-gopher/`。
 - Cai Xukun outputs to workspace path `assets/<article-slug>-caixukun/`.
+- Tomato outputs to workspace path `assets/<article-slug>-tomato/`.
 
 文档验证也保留 HTML 转义后的路径标记：`assets/&lt;article-slug&gt;-illustrations/`、`assets/&lt;article-slug&gt;-littlebox/`、`assets/&lt;article-slug&gt;-tom/`、`assets/&lt;article-slug&gt;-ferris/`、`assets/&lt;article-slug&gt;-seal/` 和 `assets/&lt;article-slug&gt;-openclaw/`。
 文档验证也保留 Go Gopher HTML 转义路径标记：`assets/&lt;article-slug&gt;-gopher/`。

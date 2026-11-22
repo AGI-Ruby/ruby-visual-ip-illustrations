@@ -1,6 +1,6 @@
 ---
 name: visual-ip-illustrations
-description: Visual IP Illustrations generates selectable visual-IP article-body illustrations and personal-IP assets for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, image repair, avatars, stickers, and wardrobe variants. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Ruby / 活力Ruby / 鲜活人类, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun are explicit selectable routes.
+description: Visual IP Illustrations generates selectable visual-IP article-body illustrations and personal-IP assets for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, image repair, avatars, stickers, and wardrobe variants. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Ruby / 活力Ruby / 鲜活人类, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, Cai Xukun, and Tomato are explicit selectable routes.
 ---
 
 # Visual IP Illustrations
@@ -39,6 +39,8 @@ Ferris is an explicit Rust-community mascot route: route id `ferris`, display na
 Seal is an explicit route: route id `seal`, display name `Seal`, default=false, output_suffix: seal, route status `active`. Seal is a product-neutral hoodie seal article character. Seal source-history authority is `references/ips/seal/source.md`, and planning, generation, QA, edit, and delivery surfaces keep the hoodie seal identity note, Logo-free note, and `assets/<article-slug>-seal/`.
 
 Seal imagery is logo-free: cap, hoodie chest, mascot body, props, and scene use no cap logo, no chest logo, no mascot logos, no logo patches, no logo-like wave/cloud mark, no emblem, and no text badge.
+
+Tomato is an explicit active product-mascot route for Tomato Studio. It is anchored to the product logo assets and uses a round ripe red tomato body, green leafy calyx, simple friendly face and minimal orange-red limbs. Use it for product, workflow, workbench and creator-to-commerce illustrations. Keep it separate from Ruby's personal human visual IP and do not use it as a creator identity.
 
 OpenClaw is an explicit source-reviewed logo-mascot route: route id `openclaw`, display name `OpenClaw`, default=false, output_suffix: openclaw, route status `source-reviewed`. OpenClaw source/license authority is `references/ips/openclaw/source.md`, and planning, generation, QA, edit, and delivery surfaces keep the uploaded-logo identity note, source/license note, and `assets/<article-slug>-openclaw/`.
 
@@ -98,6 +100,13 @@ Read `references/routing.md` first, then load only the selected route's required
 - `references/ips/seal/composition-patterns.md`: Seal composition families, hoodie seal action patterns, supporting object pool, and original metaphor gates.
 - `references/ips/seal/prompt-template.md`: Seal planning fields, single-image prompt, edit gates, hoodie seal identity note, and output reminder.
 - `references/ips/seal/qa-checklist.md`: Seal QA, failure categories, repair moves, and delivery judgment.
+- `references/ips/tomato/index.md`: Tomato canonical pack navigation, route status, source authority, output path, and reference list.
+- `references/ips/tomato/source.md`: Tomato product-logo source authority, identity markers, and usage boundary.
+- `references/ips/tomato/style-dna.md`: Tomato visual language, palette, and vetoes.
+- `references/ips/tomato/tomato-ip.md`: Tomato mascot identity, action library, and failure modes.
+- `references/ips/tomato/composition-patterns.md`: Tomato composition families, metaphor rules, and anti-repeat gates.
+- `references/ips/tomato/prompt-template.md`: Tomato planning fields, generation prompt, and edit rules.
+- `references/ips/tomato/qa-checklist.md`: Tomato identity, layout, route-leakage, and delivery checks.
 - `references/ips/openclaw/index.md`: OpenClaw canonical pack navigation, route status, source/license authority, uploaded-logo identity note, output path, and reference list.
 - `references/ips/openclaw/source.md`: OpenClaw source/license authority, official repository, MIT License, OpenClaw Foundation copyright, uploaded-logo authority, public-sample policy, reviewer fields, and route-status authority.
 - `references/ips/openclaw/style-dna.md`: OpenClaw sparse article-illustration style, uploaded-logo identity markers, visual vetoes, and route gates.
@@ -138,13 +147,14 @@ Read `references/routing.md` first and choose the route for the current task.
 - `OpenClaw`, `openclaw`, `OpenClaw logo`, `OpenClaw mascot`, and the OpenClaw aliases listed in `references/routing.md` select the same OpenClaw route: route id `openclaw`, display name `OpenClaw`, default=false, output_suffix: openclaw, route status `source-reviewed`, source/license pointer `references/ips/openclaw/source.md`.
 - `Go Gopher`, `Gopher`, `golang gopher`, `Go mascot`, and Go Gopher-qualified route phrases select the same Go Gopher route: route id `gopher`, display name `Go Gopher`, default=false, output_suffix: gopher, route status `source-reviewed`, source/license pointer `references/ips/gopher/source.md`, and route-local `skills/visual-ip-illustrations/references/ips/gopher/gopher.png` visual authority. Generic route phrases stay governed by `references/routing.md` and remain outside Go Gopher selection.
 - Cai Xukun aliases listed in `references/routing.md` select the same Cai Xukun route: route id `caixukun`, display name `Cai Xukun`, default=false, output_suffix: caixukun, route status `gated-public-figure`, source pointer `references/ips/caixukun/source.md`, and output path `assets/<article-slug>-caixukun/`. Broad celebrity, idol, duck, yellow mascot, and fandom words stay governed by `references/routing.md` and remain outside Cai Xukun selection.
-- Mixed requests across Xiaohei, Ruby, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, and Cai Xukun first identify one shared core idea, then create separate route groups. Each selected variant group uses its own route id, required_references, prompt template, composition rules, QA, edit repairs, output_suffix, route note, and output directory.
+- Mixed requests across Xiaohei, Ruby, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, Cai Xukun, and Tomato first identify one shared core idea, then create separate route groups. Each selected variant group uses its own route id, required_references, prompt template, composition rules, QA, edit repairs, output_suffix, route note, and output directory.
 - Xiaohei keeps the `$ian-xiaohei-illustrations` compatibility behavior and `assets/<article-slug>-illustrations/` output path; canonical invocation is `$visual-ip-illustrations`.
 - Ruby uses `assets/<article-slug>-ruby/` and keeps `active` plus `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and route-local QA context in planning, generation, QA, edit, and delivery.
 - Littlebox uses `assets/<article-slug>-littlebox/`.
 - Tom uses `assets/<article-slug>-tom/` and keeps `gated-authorized` plus `references/ips/tom/rights.md` in planning, generation, QA, edit, and delivery.
 - Ferris uses `assets/<article-slug>-ferris/` and keeps `source-reviewed` plus `references/ips/ferris/source.md` in planning, generation, QA, edit, and delivery.
 - Seal uses `assets/<article-slug>-seal/` and keeps `active` plus `references/ips/seal/source.md` in planning, generation, QA, edit, and delivery.
+- Tomato uses `assets/<article-slug>-tomato/` and keeps `active` plus `references/ips/tomato/source.md` in planning, generation, QA, edit, and delivery.
 - OpenClaw uses `assets/<article-slug>-openclaw/` and keeps `source-reviewed` plus `references/ips/openclaw/source.md` in planning, generation, QA, edit, and delivery.
 - Go Gopher uses `assets/<article-slug>-gopher/` and keeps `source-reviewed`, `references/ips/gopher/source.md`, route-local `skills/visual-ip-illustrations/references/ips/gopher/gopher.png`, Renee French attribution, Creative Commons Attribution 4.0 boundary, public sample review boundary, Go logo boundary, and official endorsement boundary in planning, generation, QA, edit, and delivery.
 - Cai Xukun uses `assets/<article-slug>-caixukun/` and keeps `gated-public-figure`, `references/ips/caixukun/source.md`, uploaded-image identity note, public-figure likeness boundary, source-image context note, public sample review boundary, route isolation status, and neutral article-concept labels after public-figure claim sanitization in planning, generation, QA, edit, and delivery.
@@ -154,6 +164,7 @@ Read `references/routing.md` first and choose the route for the current task.
 - Tom `required_references` point to `references/ips/tom/`: `index.md`, `rights.md`, `style-dna.md`, `tom-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Ferris `required_references` point to `references/ips/ferris/`: `index.md`, `source.md`, `style-dna.md`, `ferris-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Seal `required_references` point to `references/ips/seal/`: `index.md`, `source.md`, `style-dna.md`, `seal-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
+- Tomato `required_references` point to `references/ips/tomato/`: `index.md`, `source.md`, `style-dna.md`, `tomato-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - OpenClaw `required_references` point to `references/ips/openclaw/`: `index.md`, `source.md`, `style-dna.md`, `openclaw-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Go Gopher `required_references` point to `references/ips/gopher/`: `index.md`, `source.md`, `style-dna.md`, `gopher-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
 - Cai Xukun `required_references` point to `references/ips/caixukun/`: `index.md`, `source.md`, `style-dna.md`, `caixukun-ip.md`, `composition-patterns.md`, `prompt-template.md`, and `qa-checklist.md`.
@@ -304,6 +315,7 @@ Mixed-IP shot lists first state the shared core idea, then split into independen
 - Tom variant group: Tom state, Tom action, supporting objects, visible labels, `references/ips/tom/` QA, `assets/<article-slug>-tom/`, rights-status note, `gated-authorized`, `references/ips/tom/rights.md`
 - Ferris variant group: Ferris state, Ferris action, supporting objects, visible labels, `references/ips/ferris/` QA, `assets/<article-slug>-ferris/`, source/trademark note, `source-reviewed`, `references/ips/ferris/source.md`
 - Seal variant group: Seal state, Seal action, supporting objects, visible labels, `references/ips/seal/` QA, `assets/<article-slug>-seal/`, hoodie seal identity note, Logo-free note, `active`, `references/ips/seal/source.md`
+- Tomato variant group: Tomato state, Tomato action, supporting objects, visible labels, `references/ips/tomato/` QA, `assets/<article-slug>-tomato/`, product-logo source note, `active`, `references/ips/tomato/source.md`
 - OpenClaw variant group: OpenClaw state, OpenClaw action, supporting objects, visible labels, `references/ips/openclaw/` QA, `assets/<article-slug>-openclaw/`, uploaded-logo identity note, source/license note, `source-reviewed`, `references/ips/openclaw/source.md`
 - Go Gopher variant group: Gopher state, Gopher action, supporting objects, visible labels, `references/ips/gopher/` QA, `assets/<article-slug>-gopher/`, route status `source-reviewed`, source pointer `references/ips/gopher/source.md`, route-local `gopher.png` identity note, source/license note, public sample review boundary, route isolation status
 - Cai Xukun variant group: route id `caixukun`, Cai Xukun mascot state, Cai Xukun mascot action, supporting objects, visible labels as neutral article-concept labels, required references `references/ips/caixukun/`, prompt template `references/ips/caixukun/prompt-template.md`, composition rules `references/ips/caixukun/composition-patterns.md`, QA checklist `references/ips/caixukun/qa-checklist.md`, edit gates from `references/ips/caixukun/prompt-template.md`, output_suffix: caixukun, route note, output directory `assets/<article-slug>-caixukun/`, route status `gated-public-figure`, source pointer `references/ips/caixukun/source.md`, uploaded-image identity status, public-figure likeness boundary status, source-image context status, public sample review boundary when relevant, and route isolation status
@@ -473,7 +485,7 @@ Mixed-IP generation uses the same shared core idea to generate separated selecte
 
 ### 5. QA and Iteration
 
-After generation, check the selected IP's QA reference. Xiaohei uses `references/ips/xiaohei/qa-checklist.md`; Ruby uses `references/ips/ruby/qa-checklist.md`; Littlebox uses `references/ips/littlebox/qa-checklist.md`; Tom uses `references/ips/tom/qa-checklist.md`; Ferris uses `references/ips/ferris/qa-checklist.md`; Seal uses `references/ips/seal/qa-checklist.md`; OpenClaw uses `references/ips/openclaw/qa-checklist.md`; Go Gopher uses `references/ips/gopher/qa-checklist.md`; Cai Xukun uses `references/ips/caixukun/qa-checklist.md`; `references/qa-checklist.md` remains the legacy root compatibility entry point.
+After generation, check the selected IP's QA reference. Xiaohei uses `references/ips/xiaohei/qa-checklist.md`; Ruby uses `references/ips/ruby/qa-checklist.md`; Littlebox uses `references/ips/littlebox/qa-checklist.md`; Tom uses `references/ips/tom/qa-checklist.md`; Ferris uses `references/ips/ferris/qa-checklist.md`; Seal uses `references/ips/seal/qa-checklist.md`; OpenClaw uses `references/ips/openclaw/qa-checklist.md`; Go Gopher uses `references/ips/gopher/qa-checklist.md`; Cai Xukun uses `references/ips/caixukun/qa-checklist.md`; Tomato uses `references/ips/tomato/qa-checklist.md`; `references/qa-checklist.md` remains the legacy root compatibility entry point.
 
 Xiaohei high-risk failures:
 
