@@ -103,7 +103,7 @@ Aliases: `Seal`, `hoodie seal`, `white seal`, `blue hoodie seal`, `海豹`, `连
 
 Tomato is the active product-mascot route for Tomato Studio: a round red tomato with a green calyx performs one clear product or creator-to-commerce action. It is anchored to the Tomato Studio logo assets and stays separate from Ruby's personal visual IP.
 
-Aliases: `Tomato`, `Tomato Studio`, `小番茄`, `番茄`, `番茄西红柿`.
+Aliases: `Tomato`, `Tomato Studio`; Chinese aliases are listed in `skills/visual-ip-illustrations/references/routing.md`.
 
 ### OpenClaw
 

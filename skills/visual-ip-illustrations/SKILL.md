@@ -1,6 +1,6 @@
 ---
 name: visual-ip-illustrations
-description: Visual IP Illustrations generates selectable visual-IP article-body illustrations and personal-IP assets for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, image repair, avatars, stickers, and wardrobe variants. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Ruby / 活力Ruby / 鲜活人类, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, Cai Xukun, and Tomato are explicit selectable routes.
+description: Visual IP Illustrations generates selectable visual-IP article-body illustrations and personal-IP assets for articles, posts, blogs, Notion docs, workflow docs, methods, processes, structures, states, metaphors, opinions, shot lists, title-removal edits, image repair, avatars, stickers, and wardrobe variants. The omitted visual IP default is Xiaohei, with localized route aliases preserved in references/routing.md; Ruby, Littlebox, Tom, Ferris, Seal, OpenClaw, Go Gopher, Cai Xukun, and Tomato are explicit selectable routes.
 ---
 
 # Visual IP Illustrations
@@ -28,7 +28,7 @@ The omitted visual IP default is Xiaohei. Compatibility marker: omitted visual I
 
 Xiaohei is a black solid-bodied character with white dot eyes, thin legs, and a blank expression. Xiaohei performs one serious, absurd, conceptually valid action and carries the central cognitive action in the image.
 
-Ruby is an explicit route: route id `ruby`, display name `Vibrant Ruby / Fresh Human`, Chinese display names `活力Ruby` / `鲜活人类`, default=false, output_suffix: ruby, route status `active`. Ruby is an energetic orange-bob-haired human personal visual IP with black cat-eye glasses, white or light inner top, red lips, hand-drawn black linework, and an orange hand-drawn connection-line motif. Ruby supports article-body illustrations, avatars, transparent stickers, action sticker libraries, wardrobe variants, and social assets where Ruby herself performs the cognitive or expressive action. Ruby source authority is `references/ips/ruby/source.md`, and planning, generation, QA, edit, and delivery surfaces keep the Ruby identity note, wardrobe note, and `assets/<article-slug>-ruby/`.
+Ruby is an explicit route: route id `ruby`, display name `Vibrant Ruby / Fresh Human`, default=false, output_suffix: ruby, route status `active`. Ruby is an energetic orange-bob-haired human personal visual IP with black cat-eye glasses, white or light inner top, red lips, hand-drawn black linework, and an orange hand-drawn connection-line motif. Ruby supports article-body illustrations, avatars, transparent stickers, action sticker libraries, wardrobe variants, and social assets where Ruby herself performs the cognitive or expressive action. Ruby source authority is `references/ips/ruby/source.md`, and planning, generation, QA, edit, and delivery surfaces keep the Ruby identity note, wardrobe note, and `assets/<article-slug>-ruby/`.
 
 Littlebox is an explicit route for a closed paper-box character. It uses thick rough black marker linework, a pale sky-blue or pale lavender background, amber seam tape, and sparse coral accents. It translates the same cognitive action into collecting, packaging, sorting, delivering, blocking, or repairing.
 
@@ -719,7 +719,7 @@ When the selected visual IP is `Cai Xukun`, post-generation delivery must includ
 Mixed-IP delivery uses one block per IP:
 
 - Xiaohei block: shared core idea, image purposes, save path `assets/<article-slug>-illustrations/`, stability notes
-- Ruby block: selected IP `Ruby / 活力Ruby / 鲜活人类`, shared core idea, image purposes, save path `assets/<article-slug>-ruby/`, route status `active`, source pointer `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and stability notes
+- Ruby block: selected IP `Ruby`, shared core idea, image purposes, save path `assets/<article-slug>-ruby/`, route status `active`, source pointer `references/ips/ruby/source.md`, Ruby identity note, wardrobe note, and stability notes
 - Littlebox block: shared core idea, image purposes, save path `assets/<article-slug>-littlebox/`, assigned background, stability notes
 - Tom block: selected IP `Tom`, shared core idea, image purposes, save path `assets/<article-slug>-tom/`, route status `gated-authorized`, rights note `references/ips/tom/rights.md`, stability notes
 - Ferris block: selected IP `Ferris`, shared core idea, image purposes, save path `assets/<article-slug>-ferris/`, route status `source-reviewed`, source/trademark note, source pointer `references/ips/ferris/source.md`, stability notes
