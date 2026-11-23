@@ -32,6 +32,7 @@ Current route inventory:
 - **OpenClaw**: explicit logo-mascot route. Requests that name `OpenClaw`, `openclaw`, `OpenClaw logo`, `OpenClaw mascot`, or the OpenClaw aliases listed in `skills/visual-ip-illustrations/references/routing.md` use the OpenClaw route.
 - **Go Gopher**: explicit source-reviewed article-illustration mascot route. Requests that name `Go Gopher`, `Gopher`, `golang gopher`, `Go mascot`, or Go Gopher aliases listed in `skills/visual-ip-illustrations/references/routing.md` use the Go Gopher route.
 - **Cai Xukun**: explicit `gated-public-figure` stylized mascot-only route. Requests that name `Cai Xukun`, `蔡徐坤`, `caixukun`, or `cxk` use the Cai Xukun route with uploaded-image authority, public-figure likeness boundary, source-image context boundary, public sample review gate, route isolation, source pointer `skills/visual-ip-illustrations/references/ips/caixukun/source.md`, output path `assets/<article-slug>-caixukun/`, and safety review for endorsement, affiliation, impersonation, campaign, advertising, and fandom-promotion claims.
+- **Rumi**: explicit active personal-pet route for Toast Rumi, a long-haired golden-shaded kitten account. Source pointer `skills/visual-ip-illustrations/references/ips/rumi/source.md`; output path `assets/<article-slug>-rumi/`.
 
 Core value: users can choose a visual IP and receive article illustration assets whose character, style rules, prompts, QA gates, saved outputs, attribution, source context, and brand boundary stay consistent with that IP.
 
@@ -60,10 +61,12 @@ Release 1.4 public identity uses `Visual IP Illustrations`, canonical local chec
 - Go Gopher outputs to workspace path `assets/<article-slug>-gopher/`.
 - Cai Xukun outputs to workspace path `assets/<article-slug>-caixukun/`.
 - Tomato outputs to workspace path `assets/<article-slug>-tomato/`.
+- Rumi outputs to workspace path `assets/<article-slug>-rumi/`.
 
 Docs validation also keeps HTML-escaped path markers: `assets/&lt;article-slug&gt;-illustrations/`, `assets/&lt;article-slug&gt;-littlebox/`, `assets/&lt;article-slug&gt;-tom/`, `assets/&lt;article-slug&gt;-ferris/`, `assets/&lt;article-slug&gt;-seal/`, and `assets/&lt;article-slug&gt;-openclaw/`.
 Docs validation also keeps Go Gopher escaped marker: `assets/&lt;article-slug&gt;-gopher/`.
 Docs validation also keeps Cai Xukun escaped marker: `assets/&lt;article-slug&gt;-caixukun/`.
+Docs validation also keeps Rumi escaped marker: `assets/&lt;article-slug&gt;-rumi/`.
 
 ---
 

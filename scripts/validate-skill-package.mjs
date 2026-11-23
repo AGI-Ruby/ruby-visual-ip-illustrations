@@ -646,6 +646,7 @@ export function outputPathTokens() {
       "assets/<article-slug>-openclaw/",
       "assets/<article-slug>-gopher/",
       "assets/<article-slug>-caixukun/",
+      "assets/<article-slug>-rumi/",
     ],
     escaped: [
       "assets/&lt;article-slug&gt;-illustrations/",
@@ -656,6 +657,7 @@ export function outputPathTokens() {
       "assets/&lt;article-slug&gt;-openclaw/",
       "assets/&lt;article-slug&gt;-gopher/",
       "assets/&lt;article-slug&gt;-caixukun/",
+      "assets/&lt;article-slug&gt;-rumi/",
     ],
   };
 }
@@ -671,6 +673,7 @@ function publicDocsOutputPathTokens() {
       "assets/<article-slug>-openclaw/",
       "assets/<article-slug>-gopher/",
       "assets/<article-slug>-caixukun/",
+      "assets/<article-slug>-rumi/",
     ],
     escaped: [
       "assets/&lt;article-slug&gt;-illustrations/",
@@ -681,6 +684,7 @@ function publicDocsOutputPathTokens() {
       "assets/&lt;article-slug&gt;-openclaw/",
       "assets/&lt;article-slug&gt;-gopher/",
       "assets/&lt;article-slug&gt;-caixukun/",
+      "assets/&lt;article-slug&gt;-rumi/",
     ],
   };
 }
@@ -2381,6 +2385,14 @@ function rebrandRouteExpectations() {
       outputSuffix: "tomato",
       referenceCount: 7,
     },
+    {
+      id: "rumi",
+      aliases: ["Rumi", "吐司 Rumi", "吐司猫", "奶油长毛猫", "Rumi cat"],
+      default: "false",
+      status: "active",
+      outputSuffix: "rumi",
+      referenceCount: 7,
+    },
   ];
 }
 
@@ -3180,7 +3192,7 @@ const checks = [
   defineCheck("ROUTE-REFS-001", "routing.md required_references resolve inside the package", () => {
     for (const row of routeRows()) {
       const references = routeReferencePaths(row);
-      const expectedCounts = { xiaohei: 5, ruby: 7, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7, tomato: 7 };
+      const expectedCounts = { xiaohei: 5, ruby: 7, littlebox: 6, tom: 7, ferris: 7, seal: 7, openclaw: 7, gopher: 7, caixukun: 7, tomato: 7, rumi: 7 };
       const expectedCount = expectedCounts[row.id];
       if (references.length !== expectedCount) {
         throw new Error(
